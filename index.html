@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WYMsearcher</title>
+    <link href="style.css" rel="stylesheet">
+  </head>  
+  <body id="background">
+    
+    <div align="center" class="example">
+      <h1>WYM Searcher</h1>
+      
+    </div>
+    <div class="flex">
+      <div align="center" id="ingredientleft" class="left">
+        <h2>↓材料から選んでね↓</h2>
+        <h2 id="material">Meet</h2>
+        <button id="torimomoBtn" class="nikubtn" onclick="this.disabled = true;">鶏モモ</button>
+        <button id="torimuneBtn" class="nikubtn" onclick="this.disabled = true;">鶏ムネ</button>
+        <button id="aibikiBtn" class="nikubtn" onclick="this.disabled = true;">牛豚合挽肉</button>
+        <button id="butabaraBtn" class="nikubtn" onclick="this.disabled = true;">豚バラ</button>
+        <button id="butahikiBtn" class="nikubtn" onclick="this.disabled = true;">豚ひき肉</button><br>
+
+        <h2 id="material">Fish</h2>
+        <button id="maguroBtn" class="sakanabtn" onclick="this.disabled = true;">マグロ</button>
+        <button id="salmonBtn" class="sakanabtn" onclick="this.disabled = true;">鮭</button>
+        <button id="iwashiBtn" class="sakanabtn" onclick="this.disabled = true;">イワシ</button>
+        <button id="ajiBtn" class="sakanabtn" onclick="this.disabled = true;">アジ</button>
+        <button id="taraBtn" class="sakanabtn" onclick="this.disabled = true;">タラ</button><br>
+
+        <h2 id="material">Vegetable</h2>
+        <button id="hourensouBtn" class="yasaibtn" onclick="this.disabled = true;">ホウレンソウ</button>
+        <button id="tamanegiBtn" class="yasaibtn" onclick="this.disabled = true;">玉ねぎ</button>
+        <button id="moyashiBtn" class="yasaibtn" onclick="this.disabled = true;">もやし</button>
+        <button id="kyabetuBtn" class="yasaibtn" onclick="this.disabled = true;">キャベツ</button>
+        <button id="tomatoBtn" class="yasaibtn" onclick="this.disabled = true;">トマト缶</button><br>
+
+        <button id="pmanBtn" class="yasaibtn" onclick="this.disabled = true;">ピーマン</button>
+        <button id="koguchinegiBtn" class="yasaibtn" onclick="this.disabled = true;">小口ネギ</button>
+        <button id="ninjinBtn" class="yasaibtn" onclick="this.disabled = true;">ニンジン</button>
+        <button id="hakusaiBtn" class="yasaibtn" onclick="this.disabled = true;">白菜</button>
+        <button id="ingenBtn" class="yasaibtn" onclick="this.disabled = true;">インゲン</button><br>
+
+        <h2 id="material">Other</h2>
+        <button id="uzuraBtn" class="sonotabtn" onclick="this.disabled = true;">うずらの卵</button>
+        <button id="eggBtn" class="sonotabtn" onclick="this.disabled = true;">鶏卵</button>
+        <button id="bifunBtn" class="sonotabtn" onclick="this.disabled = true;">ビーフン</button>
+        <button id="tofuBtn" class="sonotabtn" onclick="this.disabled = true;">豆腐</button>
+        <button id="kouyadoufuBtn" class="sonotabtn" onclick="this.disabled = true;">高野豆腐</button><br><br>
+        <h2>リセットは更新ボタン(F5)でお願いします！</h2>
+      </div>
+      <div align="center" id="ingredientright" class="right">
+        <h2 id="kotira">↓選択された食材↓</h2>
+        <ul id="myList"></ul>
+        <button id="searchBtn" class="searchbtn">何が<br>出来るかな？</button>
+      </div>
+      <div>
+        
+      </div>
+    </div>
+    <script src="dish.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
